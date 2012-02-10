@@ -2,200 +2,92 @@
 @import url("reset.css"); 
 @import url("global-forms.css"); 
 
+/* HTML5 tags */ header, section, footer, aside, nav, article, figure {
+display: block;
+}
+
 /***** Global *****/ 
 
 /* Body */ 
 
-body { 
-	font-family: 'Helvetica Neue', Arial, sans-serif; 
-	margin: 0; 
-	padding: 0; 
-	text-align: left; 
-	font-size: 87.5%; /* Base font size: 14px */
+body {
+font-family: 'Helvetica Neue', Arial, sans-serif;
+margin: 0;
+padding: 0;
+text-align: left;
 }
 
-
-/* Headings */ 
+header h1 {
+	
+	margin: 10px 0em -20px 15px;
+	font-size: 18px;
+	font-weight: normal;
+	
+}
 
 h2 {
-	font-size: 1.571em
-}
-/* 22px */ h3 {
-	font-size: 1.429em
-}
-/* 20px */ h4 {
-	font-size: 1.286em
-}
-/* 18px */ h5 {
-	font-size: 1.143em
-}
-/* 16px */ h6 {
-	font-size: 1em
-}
-/* 14px */ h2, h3, h4, h5, h6 {
-	font-weight: 400;
-	line-height: 1.1;
-	margin-bottom: .8em;
-}
-
-/* Anchors */ a {
-	outline: 0;
-}
-a img {
-	border: 0px;
-	text-decoration: none;
-}
-a:link, a:visited {
-	color: #C74350;
-	padding: 0 1px;
-	text-decoration: underline;
-}
-a:hover, a:active {
-	background-color: #C74350;
-	color: #fff;
-	text-decoration: none;
-	text-shadow: 1px 1px 1px #333;
-}
-/* Paragraphs */ p {
-	margin-bottom: 1.143em;
-}
-* p:last-child {
-	margin-bottom: 0;
-}
-strong, b {
-	font-weight: bold;
-}
-em, i {
-	font-style: italic;
-}
-::-moz-selection {
-	background: #F6CF74;
-	color: #fff;
-}
-::selection {
-	background: #F6CF74;
-	color: #fff;
-}
-/* Lists */ ul {
-	list-style: outside disc;
-	margin: 1em 0 1.5em 1.5em;
-}
-ol {
-	list-style: outside decimal;
-	margin: 1em 0 1.5em 1.5em;
-}
-dl {
-	margin: 0 0 1.5em 0;
-}
-dt {
-	font-weight: bold;
-}
-dd {
-	margin-left: 1.5em;
-}
-/* Quotes */ blockquote {
-	font-style: italic;
-}
-cite {
-}
-q {
-}
-/* Tables */ table {
-	margin: .5em auto 1.5em auto;
-	width: 98%;
-}
-/* Thead */ thead th {
-	padding: .5em .4em;
-	text-align: left;
-}
-thead td {
-}
-/* Tbody */ tbody td {
-	padding: .5em .4em;
-}
-tbody th {
-}
-tbody .alt td {
-}
-tbody .alt th {
-}
-/* Tfoot */ tfoot th {
-}
-tfoot td {
-}
-
-
-/* Header *****************/ 
-
-#banner {
-	margin: 0 auto;
-	padding: 2.5em 0 0 0;
-}
-
-/* Banner */ 
-
-#banner h1 {
-	font-size: 3.571em;
-	line-height: .6;
-}
-#banner h1 a:link, #banner h1 a:visited {
-	color: #000305;
-	display: block;
-	font-weight: bold;
-	margin: 0 0 .6em .2em;
-	text-decoration: none;
-	width: 427px;
-}
-#banner h1 a:hover, #banner h1 a:active {
-	background: none;
-	color: #C74350;
-	text-shadow: none;
-}
-#banner h1 strong {
-	font-size: 0.36em;
-	font-weight: normal;
-}
-
-/* Main Nav */ #banner nav {
-	background: #000305;
-	font-size: 1.143em;
-	height: 40px;
-	line-height: 30px;
-	margin: 0 auto 2em auto;
-	padding: 0;
+	
+	font-size: 40px;
+	color: #045FB4;
 	text-align: center;
-	width: 800px;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
+	margin: 40px 0 0 0 ;
+	font-weight: normal;
+	
+	
 }
-#banner nav ul {
-	list-style: none;
-	margin: 0 auto;
-	width: 800px;
-}
-#banner nav li {
-	float: left;
-	display: inline;
-	margin: 0;
-}
-#banner nav a:link, #banner nav a:visited {
-	color: #fff;
-	display: inline-block;
-	height: 30px;
-	padding: 5px 1.5em;
+
+header a {
+	
+	color: #000;
 	text-decoration: none;
+	margin: 0 0 0 0;
+	
+	
 }
-#banner nav a:hover, #banner nav a:active, #banner nav .active a:link, #banner nav .active a:visited {
-	background: #C74451;
-	color: #fff;
-	text-shadow: none !important;
+
+footer {
+	
+	margin: 0em 2em 2em 2em;
+	text-align: right;
+	font-size: 12px;
+	color: #666;
+	
+	
 }
-#banner nav li:first-child a {
-	border-top-left-radius: 5px;
-	-moz-border-radius-topleft: 5px;
-	-webkit-border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
-	-moz-border-radius-bottomleft: 5px;
-	-webkit-border-bottom-left-radius: 5px;
+
+
+
+/* Begin Navigation Bar Styling */
+   nav ul{
+      width: 100%;
+      float: left;
+      margin: 0 0 1em 0;
+      padding: 0;
+      list-style: none;
+      #background-color: #f2f2f2;
+      border-bottom: 1px solid #666; 
+      border-top: 0px solid #ccc; 
+	}
+
+   nav li {
+	float: right;
+	
+       }
+   nav li a {
+      display: block;
+	  margin: 0 0 10px 0;
+      padding: 0px 40px 0px 0px;
+      text-decoration: none;
+      font-weight: normal;
+      color: #000;
+      border-right: 0px solid #ccc; }
+   nav li a:hover {
+      color: #045FB4;
+      background-color: #fff; }
+   /* End navigation bar styling. */
+
+.current {
+	
+	color: #045FB4;
+
 }
